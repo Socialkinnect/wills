@@ -14,6 +14,12 @@ $(document).ready(function(){
 
   // left
 });
+
+$('.nav__icon').click(function() {
+	$(this).toggleClass('active');
+	$('.menu ul').toggleClass('push');
+    });
+
 });
 $(window).load(function(){
 

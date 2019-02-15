@@ -235,8 +235,8 @@ font-size: 13px;
 
 	margin: 20px 0;
 	font-size: 20px;
-	font-weight: 400;
 }
+	font-weight: 400;
 .red
 {
 	color: #da2037;
@@ -245,6 +245,15 @@ font-size: 13px;
 {    font-size: 25px;
     font-weight: 400;}
 
-
-
-
+/* about page */
+#aboutbanner img	{ width:100%; max-width:100%; display:block;}
+#aboutinfo			{ background:#fffdf8; padding:30px 0;}
+.middlepara p		{ font-size:20px; color:#2e2e2e;font-family: 'Raleway', sans-serif; max-width:900px; margin:40px auto; line-height:150%; font-weight:500; text-align:center}
+.nopadding			{ padding:0 !important}
+.shirtswrap			{ padding:120px 0;} 
+.shirtswrap ul li p  {font-family: 'Raleway', sans-serif; font-weight:500; line-height:150%;max-width:400px; padding-left:10%; font-size:18px;}
+.shirtswrap ul li:last-of-type p { padding-top:5%;}
+.garmentwrap .middlepara p { max-width:98%;}
+.elementswrap		{ background:#ebebeb; padding:40px 0;}
+.elementcol ul li	{ float:left; width:20%;}
+.elementcol ul		{ display:table; margin:0 auto; width:100%;}
