@@ -1,0 +1,63 @@
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+		.row.flexRow	{ padding:0;}
+		#nav ul li a,.rightheader ul li a		{ font-size:12px;}	
+		.rightheader ul li a:after {
+			width: 20px;
+			height: 26px;
+			background-size: 100% 100%;
+			left:4px;
+		}
+		.rightheader ul li:nth-child(2) a:after {
+			width: 20px;
+			height: 26px;
+			background-size: 100% 100%;
+			left:4px;
+		}
+		.rightheader ul li:nth-child(3) a:after{
+			width: 20px;
+			height: 26px;
+			background-size: 100% 100%;
+			left:4px;
+		}
+		.rightheader ul li a {
+			padding-left: 30px;
+		}
+		.rightheader ul li:not(:last-child) {
+			margin-right: 0px;
+		}
+		#nav ul li:not(:last-child) {
+			margin-right: 25px;
+		}
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+		#nav ul li a,.rightheader ul li a		{ font-size:12px;}
+		.rightheader ul li a:after {
+			width: 20px;
+			height: 26px;
+			background-size: 100% 100%;
+		}
+		.rightheader ul li:nth-child(2) a:after {
+			width: 20px;
+			height: 26px;
+			background-size: 100% 100%;
+		}
+		.rightheader ul li:nth-child(3) a:after{
+			width: 20px;
+			height: 26px;
+			background-size: 100% 100%;
+		}
+		.rightheader ul li a	{ padding-left:30px;}
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+
+    }
