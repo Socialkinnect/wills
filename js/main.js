@@ -2,6 +2,7 @@ $(document).ready(function(){
  $('.single-item').slick({
         arrows: false,
         autoplay: true,
+        pauseOnHover:false,
         autoplaySpeed: 3000,
         dots:true,
     });
