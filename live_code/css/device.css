@@ -34,13 +34,25 @@
      #nav ul li:not(:last-child) {
          margin-right: 25px;
     }
+     .shadowBox {
+         padding: 0 30px 30px;
     /*.iconList .wow,{
         visibility: visible !important;
     }
     */
-     .shadowBox {
-         padding: 0 30px 30px;
     }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+		.flexRow	{ display:block !important}
+		.nofloat	{ float:none !important; width:100% !important; clear:both !important}
+		#header		{ padding-top:20px;padding-bottom:12px}
+		.nav__icon,
+.nav__icon span {
+    display: inline-block;
+    transition: all .4s;
+    box-sizing: border-box;
+    z-index: 999;
 }
 /* Medium Devices, Desktops */
  @media only screen and (max-width : 992px) {
@@ -65,16 +77,17 @@
      .rightheader ul li a {
          padding-left:30px;
     }
-    .iconList li{width: 18%;}
+    .iconList li{width: 17%; margin: 30px 10px; }
     .iconList li img{max-width: 100%;}
     .boxes{width: 100%; float: none;margin:0 auto;}
     .boxes{margin-top: 30px;	text-align: center;}
     p.masonaryHeading{font-size: 20px;}
     .masonaryText{font-size: 15px;}
     .circleImage{display: none;}
-    .boxes.secondBox{min-height: auto;}
+    .boxes.secondBox{min-height: 100%;}
     .boxes.fourthBox{min-height: unset;top: unset; position: unset;}
-    #customPadding{max-height: auto;overflow: unset;}
+    #customPadding{max-height: 100%;overflow: unset;padding-bottom:20px;}
+.readmoreBtn,.readmoreBtn:hover{font-size: 13px;}
 }
 /* Small Devices, Tablets */
  @media only screen and (max-width : 768px) {
@@ -111,10 +124,13 @@
      .nav__icon {
          width: 36px;
          height: 28px;
-         margin-right: 10px;
+         margin-right: 20px;
          position: absolute;
          cursor: pointer;
+		 margin-top:4px;
          right: 0;
+		 padding-left:20px;
+		 padding-right:20px;
          top: 50%;
          z-index: 2;
          background: transparent;
@@ -155,7 +171,6 @@
          margin: 0 auto;
          position: fixed;
          width: 100%;
-         top: 39px;
          right: -100%;
          transition: all 0.8s linear;
          background-color: rgba(0, 0, 0, 0.8);
@@ -171,6 +186,24 @@
          right:0;
          justify-content: inherit;
     }
+#nav ul li a { padding:10px 0; display:table; margin:0 auto}
+.rightheader ul	{ display:table; margin:0 auto}
+.rightheader	{ margin-top:10px; position:relative}
+.middlepara p {
+    font-size: 15px;
+	margin-left:3%;
+	margin-right:3%;
+}
+.shirtswrap {
+    padding: 50px 0;
+}
+.shirtswrap ul { display:flex;flex-direction: column;}
+.shirtswrap ul li:nth-child(2) { order:-1;}
+.shirtswrap ul li:nth-child(1) p {padding-top: 5%;padding-bottom: 5%;}
+.elementcol ul li	{ width:30%; text-align:center; margin-bottom:10px;}
+.footerlogo,.connect			{ float:none !important; text-align:left; padding:5px 8px;}
+.footermenus ul li		{ font-size:15px;}
+
      #nav ul li a {
          padding:10px 0;
          display:table;
@@ -183,10 +216,45 @@
      .rightheader {
          margin-top:10px;
     }
+	ul.menu.push {
+         right:0;
+		 justify-content: inherit;
+    }
+	.nav__icon.active span:nth-of-type(1) {
+    -webkit-transform: translateY(12px) rotate(-45deg);
+    transform: translateY(12px) rotate(-45deg);
+}
+
+.nav__icon.active span:nth-of-type(2) {
+    display: none;
+}
+
+.nav__icon.active span:nth-of-type(3) {
+    -webkit-transform: translateY(-12px) rotate(45deg);
+    transform: translateY(-12px) rotate(45deg);
+}
+.bannerText{font-size:40px;top:unset;bottom:140px;}
+.rightheader ul {
+    /* display: table; */
+    /* margin: 0 auto; */
+    position: fixed;
+    left: 44%;
+    /* transform: translate(-50%,-50%); */
+    top: 3%;
+    z-index: 2;
+}
+.footerlogo,.connect			{ float:none !important; text-align:left; padding:5px 8px;}
+.footermenus ul li		{ font-size:15px;}
+.shirtswrap ul li p     { font-size:15px;}
+.connect ul li			{ text-align:center;}
+.footermenus ul li		{ text-align:center;}
+.shirtswrap ul li p		{ text-align:Center; padding-left:2%; padding-right:2%;}
+.footerlogo.pull-right  {position: relative;top: unset;left:unset;}
+#footer > .container	{ padding-top:50px;}
 }
 /* Extra Small Devices, Phones */
  @media only screen and (max-width : 480px) {
-     .nav__icon {
+     /*.nav__icon {
          width: 30px;
          height: 25px;
     }
@@ -200,3 +268,13 @@
          bottom: 0;
     }
 }
+.nav__icon span:nth-of-type(3) {
+    bottom: 0;
+}*/
+.elementcol ul li	{ width:50%; text-align:center}
+.middlepara p       { margin:20px auto; padding:0 2%;}
+#aboutinfo			{ padding:20px 0;}
+.rightheader ul		{ top:3%;}
+.rightheader ul li a  { padding-bottom:0;}
+#collection .sectionHeading	{ letter-spacing:15px;}
+    }
