@@ -1,19 +1,7 @@
 $(document).ready(function(){
- $('.single-item').slick({
-        arrows: false,
-        autoplay: true,
-        pauseOnHover:false,
-        autoplaySpeed: 3000,
-        dots:true,
-    });
  
- $('.single-item').on('afterChange', function(event, slick, direction){
-  console.log(direction);
-  $('.bannerText').addClass('hide').removeClass('wow fadeInRight');
-  $('.slick-current .bannerText').removeClass('hide').addClass('wow fadeInRight');
-
-  // left
-});
+ 
+ 
 
 $('.nav__icon').click(function() {
 	$(this).toggleClass('active');
@@ -23,5 +11,34 @@ $('.nav__icon').click(function() {
 });
 $(window).load(function(){
 
-	new WOW().init();
+$('.single-item').slick({
+        arrows: false,
+        autoplay: true,
+        pauseOnHover:false,
+        autoplaySpeed: 3000,
+        dots:true,
+    });
+$('.mobslider').slick({
+        arrows: false,
+        autoplay: true,
+        pauseOnHover:false,
+        autoplaySpeed: 3000,
+        dots:true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+    });
+	if($(window).width()>800)
+  {
+
+    $('.single-item').on('afterChange', function(event, slick, direction){
+  //console.log(direction);
+  $('.bannerText').addClass('hide').removeClass('wow fadeInRight');
+  $('.slick-current .bannerText').removeClass('hide').addClass('wow fadeInRight');
+
+  // left
+});
+    new WOW().init();
+  }
+  else
+  {$('.bannerText').removeClass('hide')}
 })
