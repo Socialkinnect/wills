@@ -44,6 +44,13 @@
 
     /* Small Devices, Tablets */
     @media only screen and (max-width : 768px) {
+        #lastShirt{text-align: center;}
+        .mediumFont {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    width: 100%;}
+        .collectionText{text-align: center;}
 		.flexRow	{ display:block !important}
 		.nofloat	{ float:none !important; width:100% !important; clear:both !important}
 		#header		{ padding-top:20px;padding-bottom:12px}

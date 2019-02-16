@@ -68,7 +68,7 @@ section{
 #nav ul li:not(:last-child)     { margin-right:40px;}
 #nav ul li a                    { color:#8e8d8d; text-decoration:none;font-family: 'Raleway', sans-serif; font-size:14px; font-weight:600;position:relative; padding-bottom:48px;}
 #nav ul li a:after              { -webkit-transition: all 0.5s ease-in;-moz-transition: all 0.5s ease-in;-ms-transition: all 0.5s ease-in;-o-transition: all 0.5s ease-in;transition: all 0.5s ease-in;position:absolute; bottom:0px; content:''; width:0; height:3px; background:#da2037; left:0; opacity:0;}
-#nav ul li a:hover:after        { opacity:1;width:100%}
+#nav ul li a:hover:after,#nav ul li a.active:after        { opacity:1;width:100%}
 .rightheader ul li              { display:inline-block;} 
 .rightheader ul li a            { padding-left:30px;color:#da2037; text-decoration:none;font-family: 'Raleway', sans-serif; font-size:13px;font-weight:600; position:relative; padding-bottom:30px; text-transform:uppercase}
 .rightheader ul li:nth-child(2) a:after     { position:absolute; content:''; top:15%; transform:translateY(-50%);left:0px; background:url('../images/locator.jpg') no-repeat; width:20px; height:25px;background-size:cover;}
@@ -254,7 +254,7 @@ font-family: 'Raleway', sans-serif;
 
 
 
-.readmoreBtn,.readmoreBtn:hover {
+.readmoreBtn,.readmoreBtn:hover,.readmoreBtn:focus,.readmoreBtn:active {
     background-color: #5f7a81;
     color: #ffffff;
     font-weight: 600;
@@ -366,7 +366,7 @@ p.masonaryHeading {
 .footermenus ul li      { margin-bottom:10px; text-transform:uppercase;font-family: 'Raleway', sans-serif; font-weight:600; color:#8e8d8d; font-size:17px;}
 .footermenus ul li a    { text-decoration:none; color:#8e8d8d}
 .footerlogo.pull-right  {position: relative;top: -40px;left: 0;}
-#footer                 { background:#fffdf8;}
+#footer                 { background:transparent;}
 .connect ul li:not(:first-child)  { float:left; padding:10px;}
 #footer > .container        { border-top:2px solid #cccccc;padding-top:70px; position:relative}
 .redline                { position:absolute; top:-4px; background:#da2037; height:7px; width:50px; left:50%; transform:translateX(-50%)}
@@ -397,3 +397,57 @@ transform: translate(-50%, -50%);
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*collection page css*/
+/*collection page css*/
+#gujratCollectionHeading .headerImg{
+    margin:0px auto 10px;
+    width: 350px;
+}
+.readmoreBtn.customMargin{
+        margin-top: 40px;
+}
+.collectionText .circleImage{
+
+    bottom:11%;
+}
+.imageContainer2 .circleImage{
+    bottom: -150px ;
+    right: 20px;
+}
+.mediumFont {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    width: 80%;
+    margin: 0 auto 20px;
+
+}
+.bottom0 .circleImage
+{
+    position: relative;
+    bottom: 0px;
+    margin-top: 50px;
+    right: 0px;
+}
+#lastSection{
+    padding-bottom: 60px;
+}

@@ -7,6 +7,10 @@ var headerheight = $('#header').outerHeight();
 
 $(window).load(function(){
 	new WOW().init();
+    if($(window).width()>800)
+    {
+        $('.collectionText').height($('.imageContainer').height());
+    }
   hideloader();
 	if (window.matchMedia('(max-width: 768px)').matches) {
 	$('ul.menu').css('top',headerheight);
